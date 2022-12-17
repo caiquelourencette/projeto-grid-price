@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend | Single Price Grid Component</title>
+
+    <style>
+      body {
+        display: flex;
+        font-family: 'Karla';
+        font-size: 16px;
+        background-color: rgb(247, 245, 245);
+        justify-content: center;
+        margin: 50px 0 0 0;
+      }
+      .caixa-t1 {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #ccc;
+        box-shadow: 0 4px 20px 0 rgb(0, 0, 0, 0.2)
+        
+      }
+      .caixa-cima {
+        background-color: white;
+        padding: 40px;
+        color: rgb(128, 128, 128, 0.6);
+      }
+      .caixa-t2 {
+        display: flex;
+      }
+      .caixa-dir {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(101, 165, 144);
+        color: aliceblue;
+        padding: 20px 35px;
+        width: 50%;
+      }
+      .caixa-dir p {
+        line-height: 1.5em;
+        color: rgb(220, 215, 215);
+      }
+      .caixa-esq {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(77, 169, 169);
+        color: aliceblue;
+        padding: 20px 35px;
+        width: 50%;
+      }
+      h1 {
+        color: rgb(77, 169, 169);
+        margin: 0;
+      }
+      .caixa-cima h2 {
+        color: greenyellow;
+      }
+      .cifrao {
+        font-size: 35px;
+        margin: 0 5px 0 0;
+      }
+      .porMes {
+        color: rgb(220, 215, 215);
+      }
+      .botao{
+        padding: 15px 2px;
+        margin: 20px 10px 10px 0;
+        color: white;
+        background-color: rgba(170, 253, 45, 0.7);
+        font-size: 15px;
+        font-weight: 700;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 20px 0 rgb(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caixa-t1">
+      <div class="caixa-cima">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>
+          Gain access to our full library of tutorials along with expert code
+          reviews.
+        </p>
+        <p>
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="caixa-t2">
+        <div class="caixa-esq">
+          <h2>Monthly Subscription</h2>
+          <p>
+            <span class="cifrao"><strong>&dollar;29</strong></span> 
+            <span class="porMes">per month</span> 
+            <p> Full access for less
+            than &dollar;1 a day
+            </p>
+            <button class="botao">Sign Up</button>
+          </p>
+        </div>
+        <div class="caixa-dir">
+          <h2>Why Us</h2>
+          <p>
+            Tutorials by industry experts <br> Peer &amp; expert code review <br> Coding
+            exercises <br> Access to our GitHub repos <br> Community forum <br> Flashcard decks <br>
+            New videos every week
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
