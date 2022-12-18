@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
-    />
+      />
     <title>Frontend | Single Price Grid Component</title>
-
+    
     <style>
       body {
         display: flex;
@@ -19,7 +19,7 @@
         font-size: 16px;
         background-color: rgb(247, 245, 245);
         justify-content: center;
-        margin: 50px 0 0 0;
+        margin: 50px 0;
       }
       .caixa-t1 {
         width: 800px;
@@ -82,11 +82,28 @@
         border-radius: 5px;
         box-shadow: 0 4px 20px 0 rgb(0, 0, 0, 0.2);
       }
-       .botao:hover {
+      .botao:hover {
         background-color: yellowgreen;
         color: black;
       }
-    </style>
+
+      @media (max-width: 600px) {
+        .caixa-t1 {
+          width: 400px;
+        }
+        .caixa-t2 {
+          flex-direction: column;
+        }
+        .caixa-esq {
+          box-sizing: border-box;
+          width: 400px;
+        }
+        .caixa-dir {
+          box-sizing: border-box;
+          width: 400px;
+        }
+      }
+      </style>
   </head>
   <body>
     <div class="caixa-t1">
@@ -108,7 +125,7 @@
             <span class="cifrao"><strong>&dollar;29</strong></span> 
             <span class="porMes">per month</span> 
             <p> Full access for less
-            than &dollar;1 a day
+              than &dollar;1 a day
             </p>
             <button class="botao">Sign Up</button>
           </p>
@@ -124,4 +141,5 @@
       </div>
     </div>
   </body>
-</html>
+  </html>
+  
